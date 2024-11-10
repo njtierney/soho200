@@ -24,15 +24,6 @@ To verify that you have visited a location, there are "found items" on most cont
 
 There are also bonus points available on many controls. E.g., "If you spot a (live) platypus you get 500 bonus points"
 
-You can run the course in any order!
-
-Travel by foot to get a 10X bonus
-Travel by bike to get a 5X bonus
-Travel by car to get a 1X bonus
-Travel by horse to get a 25X bonus
-
-You can also use a proportion of each, if you like. So, ride somewhere, then run, or drive, ride, run, etc.
-
 The goal is to get the most number of points.
 
 You can run the course in any order!
