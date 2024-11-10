@@ -1,0 +1,123 @@
+---
+title: "SOHO200"
+format: 
+  html:
+      toc: true
+execute: 
+  echo: false
+theme:
+  light: flatly
+  dark: darkly
+---
+
+# Who
+
+You!
+
+# What
+
+The SOHO 200 is the ~~first~~ second edition of the South Hobart Metrogaine/Scavenger hunt! A metrogaine is a form or [rogaine](https://rogaine.asn.au/about/what-is-rogaining) held in an urban environment.
+
+You get points by visiting the locations, which we call, "controls", which marked on the map.
+
+To verify that you have visited a location, there are "found items" on most controls. E.g., "What is the serial number on the bin next to the post?"
+
+There are also bonus points available on many controls. E.g., "If you spot a (live) platypus you get 500 bonus points"
+
+You can run the course in any order!
+
+Travel by foot to get a 10X bonus
+Travel by bike to get a 5X bonus
+Travel by car to get a 1X bonus
+Travel by horse to get a 25X bonus
+
+You can also use a proportion of each, if you like. So, ride somewhere, then run, or drive, ride, run, etc.
+
+The goal is to get the most number of points.
+
+You can run the course in any order!
+
+# Where / When
+
+- 7th December, 2024.
+- 10:30am briefing, 11am start.
+- Start: [Fruehauf](https://maps.app.goo.gl/7J42vca1r6bNys6GA) at 11am.
+- End: 3pm TBA
+
+```{r}
+#| echo: false
+library(leaflet)
+leaflet() |> 
+    addTiles() |> 
+    addMarkers(lng = 147.3012348499976,
+               lat = -42.893349257964054) |> 
+     addPopups(lng = 147.3012348499976,
+               lat = -42.893349257964054,
+               popup = 'Here is the where the <b>SOHO 200 begins!</b>')
+```
+
+# Why?
+
+It was created by Nick as a way to do something fun for his friends.
+
+# How?
+
+The maps were created using <https://oomap.dna-software.co.uk/>
+
+This website was created using [Quarto](https://quarto.org/) + github + ✨magic.✨
+
+# Previous events
+
+* [SOHO100](http://soho100.njtierney.com/)
+
+# Map
+
+Map links will be provided 24 hours before the event.
+
+You will be able to download the map by clicking the links below
+
+- [A MAP WILL BE HERE]
+
+# Clue sheet
+
+Links to the clue sheets will be provided 24 hours before the event.
+
+You will be able to download the clue sheet below:
+
+- [clue sheet 2 pager]
+- [clue sheet 1 pagr]
+
+You will also be able to see the clue sheet at this table below:
+
+```{r}
+#| eval: false
+options(tidyverse.quiet = TRUE)
+library(tidyverse)
+
+soho100 <- read_csv("soho-100-data.csv",
+                    show_col_types = FALSE,
+                    n_max = 32)
+
+DT::datatable(soho100,
+              options = list(
+                  pageLength = 33
+              ))
+```
+
+# Extra point challenges
+
+
+# Bonus point multipliers
+
+* Visit all cafes on the list = 30 points. 
+* Echidna bonus: 500 points. if you see a (live) Echidna
+* Monotreme bonus:  1000 points for seeing both a live platypus and live echidna.
+
+
+# Transport multiplies
+
+* Horseback = 25x total points
+* On Foot = 10x total points
+* Cycling = 5x total points
+* Car = 1x total points
+* % of each also allowed
