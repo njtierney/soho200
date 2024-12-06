@@ -45,6 +45,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="index_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="index_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
 <script src="index_files/libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="index_files/libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="index_files/libs/datatables-binding-0.33/datatables.js"></script>
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="index_files/libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="index_files/libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="index_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="index_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 
 
 </head>
@@ -65,10 +72,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#previous-events" id="toc-previous-events" class="nav-link" data-scroll-target="#previous-events">Previous events</a></li>
   <li><a href="#map" id="toc-map" class="nav-link" data-scroll-target="#map">Map</a></li>
   <li><a href="#clue-sheet" id="toc-clue-sheet" class="nav-link" data-scroll-target="#clue-sheet">Clue sheet</a></li>
+  <li><a href="#transport-multipliers" id="toc-transport-multipliers" class="nav-link" data-scroll-target="#transport-multipliers">Transport multipliers</a></li>
   <li><a href="#cryptic-puzzle" id="toc-cryptic-puzzle" class="nav-link" data-scroll-target="#cryptic-puzzle">Cryptic Puzzle</a></li>
-  <li><a href="#special-bonuses" id="toc-special-bonuses" class="nav-link" data-scroll-target="#special-bonuses">Special Bonuses</a></li>
-  <li><a href="#hobart-celebrities-to-get-photos-with" id="toc-hobart-celebrities-to-get-photos-with" class="nav-link" data-scroll-target="#hobart-celebrities-to-get-photos-with">Hobart Celebrities to get photos with</a></li>
-  <li><a href="#transport-multiplies" id="toc-transport-multiplies" class="nav-link" data-scroll-target="#transport-multiplies">Transport multiplies</a></li>
+  <li><a href="#setspecial-bonuses" id="toc-setspecial-bonuses" class="nav-link" data-scroll-target="#setspecial-bonuses">Set/Special Bonuses</a></li>
+  <li><a href="#hobart-celebrities-to-get-photos-with-100-points-per-celebrity" id="toc-hobart-celebrities-to-get-photos-with-100-points-per-celebrity" class="nav-link" data-scroll-target="#hobart-celebrities-to-get-photos-with-100-points-per-celebrity">Hobart Celebrities to get photos with (100 points per celebrity)</a></li>
+  <li><a href="#rainy-day-activities" id="toc-rainy-day-activities" class="nav-link" data-scroll-target="#rainy-day-activities">Rainy Day Activities</a></li>
   </ul>
 </nav>
 </div>
@@ -110,14 +118,14 @@ ul.task-list li input[type="checkbox"] {
 <h1>Where / When</h1>
 <ul>
 <li>7th December, 2024.</li>
-<li>10:30am briefing, 11am start.</li>
+<li>11:30am briefing, 12pm start.</li>
 <li>Start: <a href="https://maps.app.goo.gl/7J42vca1r6bNys6GA">Fruehauf</a> at 11am.</li>
-<li>End: 3pm <a href="https://www.facebook.com/preachershobart">Preachers Bar</a></li>
+<li>End: 4pm <a href="https://www.facebook.com/preachershobart">Preachers Bar</a></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-db8ecb7723ce6f754e95" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-db8ecb7723ce6f754e95">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-42.89334925796405,147.3012348499976,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPopups","args":[-42.89334925796405,147.3012348499976,"Here is the where the <b>SOHO 200 begins!<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"limits":{"lat":[-42.89334925796405,-42.89334925796405],"lng":[147.3012348499976,147.3012348499976]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-32b249b957a44b466ce8" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-32b249b957a44b466ce8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-42.89334925796405,147.3012348499976,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPopups","args":[-42.89334925796405,147.3012348499976,"Here is the where the <b>SOHO 200 begins!<\/b>",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":true,"className":""}]}],"limits":{"lat":[-42.89334925796405,-42.89334925796405],"lng":[147.3012348499976,147.3012348499976]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -153,7 +161,24 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="soho-200-clue-sheet-2p.pdf">clue sheet 2 pager</a></li>
 </ul>
 <p>You will also be able to see the clue sheet at this table below:</p>
-<p>You get 1 lifelines they are all: Call Nick. However you get as many lifelines as you like if you call Nick from a Telstra phone booth (It’s free, really!)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-9a6159e6b18891aa6ed3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9a6159e6b18891aa6ed3">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38"],[1,2,3,4,5,6,7,8,9,10,11,12,13,40,14,15,17,18,19,20,21,23,24,25,27,28,29,30,31,32,33,34,35,36,37,38,39,41],[10,20,20,30,20,20,50,40,50,40,40,50,40,40,30,100,30,30,20,50,50,20,30,50,20,40,50,50,40,60,50,50,30,50,50,50,50,null],["2X","750",null,"75","40","40","50","40","60","40","30","50","30","100","30",null,"60",null,"25","50","25",null,"50","100+","40","30","60",null,null,null,null,null,null,null,null,null,null,null],["Tip Shop! No found item. Secret santa bonus: x2 TOTAL point multiplier if you buy a secret santa gift for your person. This means you double your entire score!","Platypus observation spot. On the the white “slow” sign, what are the people holding in their hands? Bonus points: +750 points if you see the (alive and real) platypus (anywhere in Hobart) and take a photo.","Just up from the track junction along Rivulet Track. Who has signed off on the sign at the bottom right?","Free library. Found item: according to the slogan, what do libraries always remind you that there are? Santa hat is in here. it is a roaming control. IF you find someone with the Santa Hat you get to take it off them but you must ask nicely. 75 points.","Bear With Me. Name the tart they sell in the cabinet window. Bonus 40 pts: Enjoy a coffee/something here","Salamanca Fresh SoHo: No found item. See stone stoup bonus. Stone soup bonus: Bring the smallest root vegetable to Preachers from here. Must carry the whole SoHo200","Under the Pagola in the Fitzroy Gardens. Found item: how many white rose bushes are there? Bonus 50 points: It’s quite a nice space. Take a moment to take it in, and then enjoy a partner dance with your team member.","Banjo's Sandy Bay: Found item: How much do you save if you bring your own keep cup here? Bonus 40 points for eating a fruit mince pie here.","Park opposite UTAS rugby ground. Monument to who (which country) was exiled here? In what year were they Incarcerated? Bonus 60 points: Hand shake or hi five of someone from this country.","Playground opposite Marsden Street on Marleville Esplanade - how many swings on the arch shape? Bonus 40 points for swinging on the swings without getting a push.","Bridge near Short Beach / Erroll Flynn reserve and the huge hill - seat is dedicated to who? This is a special spot. Enjoy a little sit down and watch the dogs play. Bonus 30 points: Pat a dog here","Napolean street playground, Sandy. Follow orange sign on telephone pole to sculpture 24. What does 24 represent, which people are responsible for keeping them? Bonus 50 pts: Take 3 deep breaths at the benches. Isn’t Hobart great?","Princes Park, Salamanca. What was the white station at Princes Park used for? Bonus 50 points: Learn the Semaphorefore alphabet for the letters S-O-H-O","Old Red Post box, Salamanca You can send mail here! What time does mail get picked up? Bonus 100 points: Mail a (valid) christmas letter.","Salamanca Fresh, Salamanca. Number of bike parking racks out the front? Stone soup bonus 30 points: Bring the smallest root vegetable to Preachers from here. Must carry the whole SoHo200","Poem Near Gardens on footpath. What is this artwork called and who is the artist?","Cannon on RHS of Anglesea barracks on Davey Street. Which country did the canon originally belong to? Bonus 60 point if you can tell me what is written on the sides of the canon","Korean Grove plaque, Rivulet Track. What is the date and significance at the bottom of the plaque?","Hamlet Café. What is the slogan with the pot plant on the wall at the cafe? Bonus 25 points: What is a hamlet?","West Hobart Express Mailboxes on 12 Hill street. There’s a sign for a market - what was the market and when was it? Bonus 50 points: Draw on the map what you think is the geographic centre of the map?","International wall of friendship. What is significant about the plaque from the netherlands? Bonus 25 points: Hi five or shake hands with a dutch person.","Sculptures at Franklin Square in yellow boxes. “Phernomenal Bodies”, by Alicia King was largely created where?","Cat and Fiddle Arcade: in the food court cat and fiddle, How many whiskers does the cat have? 50 Bonus points: See the clock change and the dance happen.","State library of Tasmania. Near returns chute. What year was photograph of Denis Murray taken? 100 bonus points if you sign up for a library card if you don’t already have one. 30 bonus points for each book you rent from the library and bring to Preachers","Van Dieman's Land creamery. How many flavours do they have? Bonus 40 points: Enjoy come ice cream here.","Outside UTAS centre for the arts, there’s a sculpture outside car park 2927, what is the name of that sculpture? Bonus 30 points, have a browse through the window of the nice art here at the two stores","Railway Roundabout. According to the plaque, who erected this tribute, and who is it for? Bonus 60 points. In what years did trams operate in Hobart?","The Cenotaph. Each side of the cenotaph has metal flower seals - how many total? Take a moment to enjoy the views of the city, ocean, and look back over the walking bridge. It’s a special spot. Bonus 100 points if someone from the Nuyina waves at you.","Little Missy Patisserie. On RHS there is a car park with graffiti. What does the big blue letter graffiti spell? Bonus 50 points for eating a fruit mince pie here. Bonus 100 points if you bring a fruit mince pie to Nick at Preachers.","Tony Haigh Walk. What does the red post box art say about where mail will be delivered? Bonus 60 points, how many dogs are painted on the street art here?","Bottom of Leonard Wall steps Bonus 200 points. How many steps are there between the top and bottom of the steps at control 34?","Top of Leonard Wall steps what crescent name is at the top of the stairs? Bonus 100 points: How may Sheep (?) are at the house halfway along down the hill?","Mount Stuart Park Playground. Found item: how many blue butterflies are there painted on the yellow wall in the undercover area? Bonus 75 points, ride the slide down!","Mount Stuart lookout. What does the black sticker with “southwall” on it say? Wordle bonus. 1 = 100 points. 2 = 40 points. 3 = 25 points. 4 = 15 points. 5 = 10 points. 6 = 5 points. Fail = negative 10 points + Forfeit points from the lookout.","Knocklofty summit! According to the sign, how high is this above sea level? And how far is Mount Stuart Lookout from here? Birdwatching bonus: 5 points per species of bird spotted from up here. Bonus 10 points for every (unique) bird photo you capture.","Knocklofty lookout. What is the title of the QR code here?","Knocklofty bunker. There's a pipe here. What year is printed on it?","New Sydney hotel. A mural in the smoking area - what did brave young Alec Campbell wish he was? 100 bonus pts if you enjoy a beer here. Hide + Seek: Lose 200 pts if another SoHo-er photographs you here. Gain 200 pts if you photograph another SoHo-er here."],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Control<\/th>\n      <th>Score<\/th>\n      <th>Bonus<\/th>\n      <th>Description/Question<\/th>\n      <th>Answer<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":38,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Control","targets":1},{"name":"Score","targets":2},{"name":"Bonus","targets":3},{"name":"Description/Question","targets":4},{"name":"Answer","targets":5}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,25,38,50,100]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>You get 1 lifeline: Call Nick. However you get as many lifelines as you like if you call Nick from a Telstra phone booth (It’s free, really!)</p>
+</section>
+<section id="transport-multipliers" class="level1">
+<h1>Transport multipliers</h1>
+<ul>
+<li>Horseback: 25x total points</li>
+<li>On Foot = 10x total points</li>
+<li>Cycling = 5x total points</li>
+<li>Car = 1x total points</li>
+</ul>
+<p>These are calculated at the end of the game.</p>
+<p>Example: I walk half, and biked half. I get 10x0.5 plus 5x0.5. Giving a 7.5x total score multiplier.</p>
 </section>
 <section id="cryptic-puzzle" class="level1">
 <h1>Cryptic Puzzle</h1>
@@ -168,46 +193,50 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>Find: 1: _______ at 2: ________ ________, (Corner of 3 _______ &amp; _______ ), between 5: _____ and 6: ______</p>
 </section>
-<section id="special-bonuses" class="level1">
-<h1>Special Bonuses</h1>
+<section id="setspecial-bonuses" class="level1">
+<h1>Set/Special Bonuses</h1>
 <ul>
-<li>Make up your own set bonus and award your own points. Must explain at pub.</li>
-<li>Salamanca So Fresh Right now: Visit both Sal Fresh at SoHo and Salamanca Fresh at - Salamanca. 100 points</li>
-<li>Coffee flight: visit all café’s: Bear With Me, Little Missy, Hamlet, Banjos – 100 points</li>
-<li>Ice cream run: Get an affogato at a cafe: Have an ice cream at van dieman’s - 200 points</li>
-<li>Ice cream float: complete ice cream run and also have</li>
-<li>Water world: Travel by water (boat, swim, etc!) between two controls and get 10X those - combined points.</li>
-<li>Starfish: Pull a starfish out of the water somewhere in Hobart. 300 points.</li>
-<li>Four Corners: Do controls 9, 30, 35, and 1 - bonus 250 points.</li>
-<li>West Side: Controls 1-4, 20, 32-39 - bonus 100 points</li>
-<li>Knock off knock lofty: do controls 37, 38, and 39.</li>
-<li>Academy Awards: Most controls visited - bonus 250 points</li>
-<li>Echidna bonus: See an Echidna, bonus 250 points.</li>
-<li>Monotreme bonus: See both a live platypus Echidna and Platypus - 2,000 bonus points</li>
-<li>Find and tag Nick betwen 11:30 - 1pm</li>
-<li>Find someone’s birthday and sing happy birthday to them. Can be over the phone/video</li>
-<li>Swifty bonus: See a (live) swift parrot</li>
-<li>Fully Swifty: Monotreme bonus + Swifty bonus: 10X your score.</li>
+<li>Make up your own set bonus, award your own (reasonable) points. Must justify at pub.</li>
+<li>Salamanca So Fresh Right now: Visit both Sal Fresh at SoHo and Salamanca. <strong>100 points</strong></li>
+<li>Coffee flight: visit all café’s: Bear With Me, Little Missy, Hamlet, Banjos <strong>100 points</strong></li>
+<li>Ice cream run: Get an affogato at a cafe + Have an ice cream at van dieman’s <strong>200 points</strong></li>
+<li>Ice cream float: Complete ice cream run and also have a beer at New Sydney <strong>300 points</strong></li>
+<li>Water world: Travel by water (boat, swim, etc!) between two controls, <strong>get 10X pts for those controls. Add a note on those control scores</strong></li>
+<li>Starfish: Pull a starfish out of the water somewhere (put it back, too) in Hobart. <strong>300 points.</strong></li>
+<li>Four Corners: Do controls 9, 30, 35, and 1 - <strong>250 points</strong></li>
+<li>West Side: Controls 1-4, 20, 32-39 - bonus <strong>100 points</strong></li>
+<li>Knock off knock lofty: do controls 37, 38, and 39. <strong>100 points.</strong></li>
+<li>Academy Awards: Most controls visited - bonus <strong>250 points</strong></li>
+<li>Echidna bonus: See an Echidna, bonus <strong>500 points.</strong></li>
+<li>Monotreme bonus: See both a live platypus Echidna and Platypus - <strong>2,000 points</strong></li>
+<li>Tag: Find and tag Nick betwen 2:30 and 3:30pm - <strong>75 points</strong></li>
+<li>Birthday! Sing happy birthday to a friend/stranger. Must be their birthday. Can be over the phone/video. <strong>90 points.</strong></li>
+<li>Swifty bonus: See a (live) swift parrot - <strong>1,000 points</strong></li>
+<li>Fully Swifty: Monotreme bonus + Swifty bonus: <strong>10X your total score.</strong></li>
+<li>Singing in the rain. Sing a song at Salamanca Markets in this amazing weather window we have. <strong>99 points.</strong></li>
+<li>Rain related costume. If you wear comedic water gear (snorkel, wetsuit, rubber ducky) for the soho you get an additional <strong>99 points.</strong></li>
 </ul>
 </section>
-<section id="hobart-celebrities-to-get-photos-with" class="level1">
-<h1>Hobart Celebrities to get photos with</h1>
+<section id="hobart-celebrities-to-get-photos-with-100-points-per-celebrity" class="level1">
+<h1>Hobart Celebrities to get photos with (100 points per celebrity)</h1>
 <ul>
-<li>David Walsh (1000 points)</li>
-<li>Bob Brown (500 points)</li>
-<li>Hannah Moloney (250 points)</li>
-<li>Santa Claus (300 points)</li>
-<li>Someone you think is a celebrity? (??? points?)</li>
+<li>David Walsh</li>
+<li>Bob Brown</li>
+<li>Hannah Moloney</li>
+<li>Santa Claus</li>
+<li>Someone you think is a celebrity?</li>
 </ul>
 </section>
-<section id="transport-multiplies" class="level1">
-<h1>Transport multiplies</h1>
+<section id="rainy-day-activities" class="level1">
+<h1>Rainy Day Activities</h1>
 <ul>
-<li>Horseback = 25x total points</li>
-<li>On Foot = 10x total points</li>
-<li>Cycling = 5x total points</li>
-<li>Car = 1x total points</li>
-<li>% of each also allowed</li>
+<li>Play a game of chess at one of the Café’s - <strong>25 points</strong></li>
+<li>Play a game of chess with a stranger - <strong>100 points</strong></li>
+<li>Play a board game at a café - <strong>50 points</strong></li>
+<li>Visit MONA - <strong>50 points</strong></li>
+<li>Watch Lord of the Rings, Fellowship of the Ring - <strong>178 points</strong></li>
+<li>Start and finish a book - <strong>points per page</strong></li>
+<li><strong>Decide to brave the rain and do the SoHo200: Bonus 500 points.</strong></li>
 </ul>
 </section>
 

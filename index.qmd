@@ -31,9 +31,9 @@ You can run the course in any order!
 # Where / When
 
 - 7th December, 2024.
-- 10:30am briefing, 11am start.
+- 11:30am briefing, 12pm start.
 - Start: [Fruehauf](https://maps.app.goo.gl/7J42vca1r6bNys6GA) at 11am.
-- End: 3pm [Preachers Bar](https://www.facebook.com/preachershobart)
+- End: 4pm [Preachers Bar](https://www.facebook.com/preachershobart)
 
 ```{r}
 #| echo: false
@@ -84,25 +84,45 @@ You will also be able to see the clue sheet at this table below:
 #| eval: false
 options(tidyverse.quiet = TRUE)
 library(tidyverse)
+library(googlesheets4)
 
-soho200 <- read_csv("soho-200-data.csv",
-                    show_col_types = FALSE,
-                    n_max = 32)
+soho200_url <- "https://docs.google.com/spreadsheets/d/1UIpkQ1_k-4to3QH7jOwangWykjwjHdBo_EuLbqjhO-s/edit?gid=0#gid=0"
 
+soho200 <- read_sheet(soho200_url,
+                      col_types = "ddccl")
+
+write_csv(soho200, "soho200-data.csv")
+
+```
+
+
+```{r}
+soho200 <- readr::read_csv("soho200-data.csv", show_col_types = FALSE)
 DT::datatable(soho200,
               options = list(
-                  pageLength = 32
+                  pageLength = 38
               ))
 ```
 
-You get 1 lifelines they are all: Call Nick. However you get as many lifelines as you like if you call Nick from a Telstra phone booth (It’s free, really!)
+You get 1 lifeline: Call Nick. However you get as many lifelines as you like if you call Nick from a Telstra phone booth (It's free, really!)
+
+# Transport multipliers
+
+- Horseback: 25x total points
+- On Foot = 10x total points
+- Cycling = 5x total points
+- Car = 1x total points
+
+These are calculated at the end of the game. 
+
+Example: I walk half, and biked half. I get 10x0.5 plus 5x0.5. Giving a 7.5x total score multiplier.
 
 # Cryptic Puzzle
 
 Cryptic puzzle solve this and be there at the right time, get 400 bonus points. The Clues are either anagrams, numbers, or double definitions (two clues but the answer is a single word. 
 
 1. Steal; cake machine; 
-2. Waterslide Undy’s (7,8); 
+2. Waterslide Undy's (7,8); 
 3. Spy; burrowing Creature; 
 4. U burn log; 
 5. kunanyi + Tasman Bridge Speed limit; 
@@ -113,37 +133,40 @@ at 2: ________ ________,
 (Corner of 3 _______ & _______ ), 
 between 5: _____ and 6: ______
 
-# Special Bonuses
+# Set/Special Bonuses
+* Make up your own set bonus, award your own (reasonable) points. Must justify at pub.
+* Salamanca So Fresh Right now: Visit both Sal Fresh at SoHo and Salamanca. **100 points**
+* Coffee flight: visit all café's: Bear With Me, Little Missy, Hamlet, Banjos **100 points**
+* Ice cream run: Get an affogato at a cafe + Have an ice cream at van dieman's **200 points**
+* Ice cream float: Complete ice cream run and also have a beer at New Sydney **300 points**
+* Water world: Travel by water (boat, swim, etc!) between two controls, **get 10X pts for those controls. Add a note on those control scores**
+* Starfish: Pull a starfish out of the water somewhere (put it back, too) in Hobart. **300 points.**
+* Four Corners: Do controls 9, 30, 35, and 1 - **250 points**
+* West Side: Controls 1-4, 20, 32-39 - bonus **100 points**
+* Knock off knock lofty: do controls 37, 38, and 39. **100 points.**
+* Academy Awards: Most controls visited - bonus **250 points**
+* Echidna bonus: See an Echidna, bonus **500 points.**
+* Monotreme bonus: See both a live platypus Echidna and Platypus - **2,000 points**
+* Tag: Find and tag Nick betwen 2:30 and 3:30pm - **75 points**
+* Birthday! Sing happy birthday to a friend/stranger. Must be their birthday. Can be over the phone/video. **90 points.**
+* Swifty bonus: See a (live) swift parrot - **1,000 points**
+* Fully Swifty: Monotreme bonus + Swifty bonus: **10X your total score.**
+* Singing in the rain. Sing a song at Salamanca Markets in this amazing weather window we have. **99 points.**
+* Rain related costume. If you wear comedic water gear (snorkel, wetsuit, rubber ducky) for the soho you get an additional **99 points.**
 
-- Make up your own set bonus and award your own points. Must explain at pub.
-- Salamanca So Fresh Right now: Visit both Sal Fresh at SoHo and Salamanca Fresh at - Salamanca. 100 points
-- Coffee flight: visit all café’s: Bear With Me, Little Missy, Hamlet, Banjos – 100 points
-- Ice cream run: Get an affogato at a cafe: Have an ice cream at van dieman’s - 200 points
-- Ice cream float: complete ice cream run and also have
-- Water world: Travel by water (boat, swim, etc!) between two controls and get 10X those - combined points.
-- Starfish: Pull a starfish out of the water somewhere in Hobart. 300 points.
-- Four Corners: Do controls 9, 30, 35, and 1 - bonus 250 points.
-- West Side: Controls 1-4, 20, 32-39 - bonus 100 points
-- Knock off knock lofty: do controls 37, 38, and 39.
-- Academy Awards: Most controls visited - bonus 250 points
-- Echidna bonus: See an Echidna, bonus 250 points.
-- Monotreme bonus: See both a live platypus Echidna and Platypus - 2,000 bonus points
-- Find and tag Nick betwen 11:30 - 1pm
-- Find someone’s birthday and sing happy birthday to them. Can be over the phone/video
-- Swifty bonus: See a (live) swift parrot
-- Fully Swifty: Monotreme bonus + Swifty bonus: 10X your score.
+# Hobart Celebrities to get photos with (100 points per celebrity)
 
-# Hobart Celebrities to get photos with
-- David Walsh (1000 points)
-- Bob Brown (500 points)
-- Hannah Moloney (250 points)
-- Santa Claus (300 points)
-- Someone you think is a celebrity? (??? points?)
+* David Walsh 
+* Bob Brown
+* Hannah Moloney
+* Santa Claus
+* Someone you think is a celebrity?
 
-# Transport multiplies
-
-* Horseback = 25x total points
-* On Foot = 10x total points
-* Cycling = 5x total points
-* Car = 1x total points
-* % of each also allowed
+# Rainy Day Activities
+* Play a game of chess at one of the Café's - **25 points**
+* Play a game of chess with a stranger - **100 points**
+* Play a board game at a café - **50 points**
+* Visit MONA - **50 points**
+* Watch Lord of the Rings, Fellowship of the Ring - **178 points**
+* Start and finish a book - **points per page**
+* **Decide to brave the rain and do the SoHo200: Bonus 500 points.**
