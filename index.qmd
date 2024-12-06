@@ -67,7 +67,7 @@ Map links will be provided 24 hours before the event.
 
 You will be able to download the map by clicking the links below
 
-- [A MAP WILL BE HERE]
+- [SoHo200 Map](soho-200-map.pdf)
 
 # Clue sheet
 
@@ -75,8 +75,8 @@ Links to the clue sheets will be provided 24 hours before the event.
 
 You will be able to download the clue sheet below:
 
-- [clue sheet 2 pager]
-- [clue sheet 1 pagr]
+- [clue sheet 1 pager](soho-200-clue-sheet-1p.pdf)
+- [clue sheet 2 pager](soho-200-clue-sheet-2p.pdf)
 
 You will also be able to see the clue sheet at this table below:
 
@@ -85,25 +85,60 @@ You will also be able to see the clue sheet at this table below:
 options(tidyverse.quiet = TRUE)
 library(tidyverse)
 
-soho100 <- read_csv("soho-100-data.csv",
+soho200 <- read_csv("soho-200-data.csv",
                     show_col_types = FALSE,
                     n_max = 32)
 
-DT::datatable(soho100,
+DT::datatable(soho200,
               options = list(
-                  pageLength = 33
+                  pageLength = 32
               ))
 ```
 
-# Extra point challenges
+You get 1 lifelines they are all: Call Nick. However you get as many lifelines as you like if you call Nick from a Telstra phone booth (It’s free, really!)
 
+# Cryptic Puzzle
 
-# Bonus point multipliers
+Cryptic puzzle solve this and be there at the right time, get 400 bonus points. The Clues are either anagrams, numbers, or double definitions (two clues but the answer is a single word. 
 
-* Visit all cafes on the list = 30 points. 
-* Echidna bonus: 500 points. if you see a (live) Echidna
-* Monotreme bonus:  1000 points for seeing both a live platypus and live echidna.
+1. Steal; cake machine; 
+2. Waterslide Undy’s (7,8); 
+3. Spy; burrowing Creature; 
+4. U burn log; 
+5. kunanyi + Tasman Bridge Speed limit; 
+6. (South Hobart Post Code divided by Number of Elizabeth Street Outdoor Stores) + Height of Fruehauf
 
+Find: 1: _______ 
+at 2: ________ ________, 
+(Corner of 3 _______ & _______ ), 
+between 5: _____ and 6: ______
+
+# Special Bonuses
+
+- Make up your own set bonus and award your own points. Must explain at pub.
+- Salamanca So Fresh Right now: Visit both Sal Fresh at SoHo and Salamanca Fresh at - Salamanca. 100 points
+- Coffee flight: visit all café’s: Bear With Me, Little Missy, Hamlet, Banjos – 100 points
+- Ice cream run: Get an affogato at a cafe: Have an ice cream at van dieman’s - 200 points
+- Ice cream float: complete ice cream run and also have
+- Water world: Travel by water (boat, swim, etc!) between two controls and get 10X those - combined points.
+- Starfish: Pull a starfish out of the water somewhere in Hobart. 300 points.
+- Four Corners: Do controls 9, 30, 35, and 1 - bonus 250 points.
+- West Side: Controls 1-4, 20, 32-39 - bonus 100 points
+- Knock off knock lofty: do controls 37, 38, and 39.
+- Academy Awards: Most controls visited - bonus 250 points
+- Echidna bonus: See an Echidna, bonus 250 points.
+- Monotreme bonus: See both a live platypus Echidna and Platypus - 2,000 bonus points
+- Find and tag Nick betwen 11:30 - 1pm
+- Find someone’s birthday and sing happy birthday to them. Can be over the phone/video
+- Swifty bonus: See a (live) swift parrot
+- Fully Swifty: Monotreme bonus + Swifty bonus: 10X your score.
+
+# Hobart Celebrities to get photos with
+- David Walsh (1000 points)
+- Bob Brown (500 points)
+- Hannah Moloney (250 points)
+- Santa Claus (300 points)
+- Someone you think is a celebrity? (??? points?)
 
 # Transport multiplies
 
