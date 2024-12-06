@@ -33,7 +33,7 @@ You can run the course in any order!
 - 7th December, 2024.
 - 10:30am briefing, 11am start.
 - Start: [Fruehauf](https://maps.app.goo.gl/7J42vca1r6bNys6GA) at 11am.
-- End: 3pm TBA
+- End: 3pm [Preachers Bar](https://www.facebook.com/preachershobart)
 
 ```{r}
 #| echo: false
@@ -63,7 +63,7 @@ This website was created using [Quarto](https://quarto.org/) + github + ✨magic
 
 # Map
 
-Map links will be provided 24 hours before the event.
+Map links will be provided 12(ish) hours before the event.
 
 You will be able to download the map by clicking the links below
 
